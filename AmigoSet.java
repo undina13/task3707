@@ -96,6 +96,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
 
         // Write out all elements in the proper order.
         for (E e : map.keySet())
+
             s.writeObject(e);
     }
 // nvcsldfbsdufj;;
@@ -113,8 +114,9 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
         // Read in size
         int size = s.readInt();
 
-        // Read in all elements in the proper order.
+        // Read in all elements in the proper order. ghhgujut
         for (int i = 0; i < size; i++) {
+
             E e = (E) s.readObject();
             map.put(e, PRESENT);
         }
