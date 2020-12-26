@@ -103,7 +103,7 @@ public class AmigoSet<E> extends AbstractSet<E> implements Serializable, Cloneab
     //fjkghfdiu
 
     private void readObject(ObjectInputStream s) throws java.io.IOException, ClassNotFoundException {
-        // Read in any hidden serialization magic
+        // Read in any hidden serialization magicyjkyiyri
         s.defaultReadObject();
 
         // Read in HashMap capacity and load factor and create backing HashMap
